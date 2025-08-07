@@ -4,6 +4,145 @@
   box-sizing: border-box;
 }
 
+/* 100 - Thin */
+/* 100 - Thin */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* 200 - ExtraLight */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* 300 - Light */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* 400 - Regular */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* 500 - Medium */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* 600 - SemiBold */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* 700 - Bold */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* 800 - ExtraBold */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* 900 - Black */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/poppins/Poppins-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+
 body,
 html {
   height: 100vh;
@@ -13046,4 +13185,56 @@ td strong {
 
 .departments1 li.animate-up {
   animation: riseFromBottom 0.5s ease-out forwards;
+}
+
+
+
+
+/* 3d modal faq modal */
+
+.faq-model {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: white;
+    position: absolute;
+    width: 25%;
+    top: 18%;
+    right: 1%;
+    display: none;
+}
+
+.faq-model-item {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.faq-model-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  background: #fff;
+  font-weight: 600;
+  font-size: 1vw;
+}
+
+.faq-model-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  color: #111;
+  background: #fafafa;
+  font-size: 1vw;
+  transition: all 0.3s ease;
+}
+
+.faq-model-answer.open {
+  padding: 15px 20px;
+  max-height: 500px;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+  font-size: 14px;
 }
