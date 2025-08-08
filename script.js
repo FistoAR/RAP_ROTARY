@@ -2394,12 +2394,12 @@ const hotspotDescriptions = {
     text: "The body and housing provide structural integrity, ensuring durability and long-term performance.",
     audio: "./audio/Model Voice/hotspot1.mp3",
   },
-  "hotspot-2": {
-    title: "End Cover",
-    text: "End covers are essential components that protect the internal mechanism and enhance operational safety.",
+  "hotspot-3": {
+    title: "Side Cover",
+    text: "Side covers are essential components that protect the internal mechanism and enhance operational safety.",
     audio: "./audio/Model Voice/hotspot2.mp3",
   },
-  "hotspot-3": {
+  "hotspot-2": {
     title: "Rotor",
     text: "The rotor plays a key role in the system, enabling efficient movement and performance optimization.",
     audio: "./audio/Model Voice/hotspot4.mp3",
